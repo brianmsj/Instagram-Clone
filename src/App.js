@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './header.js'
 
 class App extends Component {
     state = {
@@ -23,16 +23,14 @@ class App extends Component {
   render() {
 
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+        <div>
+        <Header />
           <p>
             How many apps can we build? {this.state.count}
           </p>
           <button onClick={this.add}>add</button>
           <button onClick={this.minus}>minus</button>
-        </header>
-      </div>
+        </div>
     );
   }
 }
